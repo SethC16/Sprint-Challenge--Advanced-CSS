@@ -1,1 +1,43 @@
 // Navigation code here
+.nav {
+    .bgcolor();
+    padding-bottom: 1%;
+    width: 150%;
+     
+  
+    h1 {
+        font-size: 6rem;
+        padding-bottom: 2%;
+        text-align: center;
+    }  
+    
+    nav { 
+        font-size: 2rem;
+        margin-bottom: 2%;
+        padding: 0 15% 0 15%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+       
+        a:link {
+            text-decoration: none;
+            color: black;
+        }
+    
+    }
+
+    
+  
+    @media @phone {
+        h1 {
+        font-size: 3rem;
+        }
+        nav {
+            padding: 0 7% 0 7%;
+        }
+        a {
+        font-size: 1.5rem;
+        }
+  }
+
+}

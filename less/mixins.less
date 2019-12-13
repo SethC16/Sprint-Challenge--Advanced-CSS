@@ -1,1 +1,30 @@
 // Mixins Here
+.displayflex (@direction, @justify, @align) {
+  display: flex;
+  flex-direction: @direction;
+  justify-content: @justify;
+  align-items: @align;
+}
+
+.button(@bg-colour:rgb(106, 174, 252), @width: 75px, @font-colour: black) {
+  display: block;
+  background-color: @bg-colour;
+  margin: 0 10px 20px;
+  cursor: pointer;
+  width: @width;
+  height: 35px;
+  font-size: 2rem;
+  border-radius: 5px;
+  color: @font-colour;
+  text-align: center;
+  padding-top: 2.5%;
+
+  &:hover {
+    background-color: @font-colour;
+    color: @bg-colour;
+  }
+}
+
+.bgcolor {
+    background-color:  rgba(192, 192, 192, 0.904);
+}
