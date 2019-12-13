@@ -18,6 +18,17 @@
     display: flex;
     flex-wrap: wrap;
     width: 100%;
+    @media @phone {
+      .sky {
+        display: none;
+      }
+      .launch {
+        display: none;
+      }
+      .blast {
+        width: 90%;
+      }
+    }
 
     img {
       width: 28%;
@@ -45,6 +56,10 @@
     padding: 50px 60px;
     display: flex;
     justify-content: center;
+
+    @media @phone {
+      .displayflex(column-reverse, center, center)
+    }
 
     .walk-text {
       width: 50%;
